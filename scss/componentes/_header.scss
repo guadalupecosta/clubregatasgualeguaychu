@@ -1,0 +1,48 @@
+/* Header */
+header {
+    background-color: #4A99CC;
+    color: #FFFFFF;
+    text-align: center;
+    position: relative;
+    padding: 10px;
+
+    .titulo-principal {
+        text-transform: uppercase;
+        margin-bottom: 10px;
+        letter-spacing: 1px;
+    }
+
+    .menu-nav {
+        padding: 10px;
+        font-size: 18px;
+    }
+
+    .logo-regatas {
+        width: 100px;
+        position: absolute;
+        left: 20px;
+    }
+    
+    .menu-nav a {
+        text-align: center;
+        text-decoration: none;
+        padding: 15px;
+        color: #FFFFFF;
+        text-transform: uppercase;
+    }
+    
+    @media (max-width:600px) {
+        ul {
+            display: inline-grid;
+        }
+            li {
+            margin: 5px 0;
+        }
+    }
+
+    @media (max-width:1290px) {
+        .logo-regatas {
+            position: relative;
+        }
+    }
+}

@@ -1,0 +1,189 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+  background-color: #FFFFFF;
+}
+
+section, footer {
+  padding: 20px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Header */
+header {
+  background-color: #4A99CC;
+  color: #FFFFFF;
+  text-align: center;
+  position: relative;
+  padding: 10px;
+}
+header .titulo-principal {
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+}
+header .menu-nav {
+  padding: 10px;
+  font-size: 18px;
+}
+header .logo-regatas {
+  width: 100px;
+  position: absolute;
+  left: 20px;
+}
+header .menu-nav a {
+  text-align: center;
+  text-decoration: none;
+  padding: 15px;
+  color: #FFFFFF;
+  text-transform: uppercase;
+}
+@media (max-width: 600px) {
+  header ul {
+    display: inline-grid;
+  }
+  header li {
+    margin: 5px 0;
+  }
+}
+@media (max-width: 1290px) {
+  header .logo-regatas {
+    position: relative;
+  }
+}
+
+/* Galería */
+#galeria {
+  background-color: #4A99CC;
+  text-align: center;
+}
+
+/* Remo */
+#remo {
+  background-color: #F5E414;
+}
+
+/* Competencias */
+#competencias {
+  background-color: #63CC42;
+}
+
+/* Footer */
+footer {
+  background-color: #4A99CC;
+  padding: 10px;
+  position: relative;
+  color: #FFFFFF;
+}
+footer #contacto {
+  position: relative;
+}
+footer .volver-al-inicio {
+  text-align: right;
+  position: absolute;
+  right: 15px;
+  bottom: 15px;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+footer .grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+footer .direccion-postal {
+  grid-area: 1/1/2/2;
+}
+footer .secretaria {
+  grid-area: 2/1/3/2;
+}
+footer .redes-sociales {
+  grid-area: 1/2/2/3;
+}
+
+/* Subtitulos y parrafos */
+h2, h3, h4 {
+  text-align: center;
+  text-transform: uppercase;
+  padding: 5px;
+}
+
+h4 {
+  text-align: left;
+  margin-left: 5px;
+}
+
+p {
+  line-height: 30px;
+  padding: 15px;
+  text-align: center;
+}
+
+/* Listas y links */
+ul {
+  list-style: none;
+  text-align: center;
+}
+
+li {
+  padding: 5px;
+}
+
+a {
+  text-decoration: none;
+  color: #FFFFFF;
+  margin: 10px;
+}
+
+nav li {
+  display: inline-block;
+}
+
+nav li > ul {
+  display: none;
+}
+
+nav li:hover > ul {
+  display: block;
+  position: absolute;
+  width: 260px;
+  background-color: #4A99CC;
+  border: #4A99CC solid 2px;
+  margin: 7px;
+}
+
+/* Fotos */
+.foto {
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
+}
+
+.fila-fotos {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 10px;
+}
+
+.flex-fotos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+/*# sourceMappingURL=style.css.map */
