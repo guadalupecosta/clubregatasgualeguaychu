@@ -25,9 +25,9 @@ footer {
         grid-template-rows: repeat(2, 1fr);
         grid-column-gap: 0px;
         grid-row-gap: 0px;
+
+        .direccion-postal { grid-area: 1 / 1 / 2 / 2; }
+        .secretaria { grid-area: 2 / 1 / 3 / 2; }
+        .redes-sociales { grid-area: 1 / 2 / 2 / 3; }
         }
-        
-    .direccion-postal { grid-area: 1 / 1 / 2 / 2; }
-    .secretaria { grid-area: 2 / 1 / 3 / 2; }
-    .redes-sociales { grid-area: 1 / 2 / 2 / 3; }
 }

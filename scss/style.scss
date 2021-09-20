@@ -17,6 +17,29 @@ section, footer {
 html {
     scroll-behavior:smooth
 }
+
+// Sección de "nosotros"
+.parent {
+    display: flex;
+    justify-content: space-evenly;
+
+
+    .texto-comision {
+        text-align: justify;
+
+        strong {
+            font-weight: bold;
+        }
+    }
+
+    @media (max-width:700px) {
+        div {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+}
+
 @import 'base/colores';
 @import 'componentes/header';
 @import 'componentes/galeria';
