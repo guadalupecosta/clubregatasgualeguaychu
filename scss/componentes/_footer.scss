@@ -1,33 +1,54 @@
 /* Footer */
 footer {
     background-color: map-get($fondosSecciones, 'footer');;
-    padding: 10px;
+    padding: 30px 10px;
     position: relative;
     color: #FFFFFF;
 
     #contacto {
-            position: relative;
+        position: relative;
+        margin-bottom: 20px;
     }
 
     .volver-al-inicio {
-        text-align: right;
-        position: absolute;
+        position: fixed;
         right: 15px;
         bottom: 15px;
         color: #FFFFFF;
-        text-transform: uppercase;
-        font-weight: bold;
+        font-size: 20px;
+        width: 40px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px;
+        border-radius: 50%;
+        background-color: #3b84b3;
     }
     
-    .grid {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(2, 1fr);
-        grid-column-gap: 0px;
-        grid-row-gap: 0px;
+    .info-footer {
+        display: flex;
+        justify-content: space-around;
+        text-align: center;
 
-        .direccion-postal { grid-area: 1 / 1 / 2 / 2; }
-        .secretaria { grid-area: 2 / 1 / 3 / 2; }
-        .redes-sociales { grid-area: 1 / 2 / 2 / 3; }
+        .direccion-postal, .secretaria, .redes-sociales {
+            width: 200px;
         }
+        h4 {
+            text-transform: uppercase;
+            padding-bottom: 10px;
+        }
+        a {
+            margin: 0 !important;
+        }
+    }
+    @media (max-width:660px) {
+        .info-footer {
+            flex-direction: column !important;
+            align-items: center;
+        }
+        .direccion-postal, .secretaria, .redes-sociales {
+            padding: 10px;
+        }
+    }
 }

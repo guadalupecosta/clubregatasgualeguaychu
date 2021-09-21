@@ -18,6 +18,10 @@ html {
   scroll-behavior: smooth;
 }
 
+.comision-directiva {
+  padding-bottom: 20px;
+}
+
 .parent {
   display: flex;
   justify-content: space-evenly;
@@ -28,13 +32,18 @@ html {
 .parent .texto-comision strong {
   font-weight: bold;
 }
+
 @media (max-width: 700px) {
-  .parent div {
-    display: flex;
-    flex-direction: column;
+  .parent {
+    flex-direction: column !important;
+    display: block !important;
+  }
+
+  .texto-comision {
+    text-align: center !important;
+    padding: 10px;
   }
 }
-
 /* Header */
 header {
   background-color: #4A99CC;
@@ -97,49 +106,59 @@ header .menu-nav a {
 /* Footer */
 footer {
   background-color: #4A99CC;
-  padding: 10px;
+  padding: 30px 10px;
   position: relative;
   color: #FFFFFF;
 }
 footer #contacto {
   position: relative;
+  margin-bottom: 20px;
 }
 footer .volver-al-inicio {
-  text-align: right;
-  position: absolute;
+  position: fixed;
   right: 15px;
   bottom: 15px;
   color: #FFFFFF;
+  font-size: 20px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 50%;
+  background-color: #3b84b3;
+}
+footer .info-footer {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+}
+footer .info-footer .direccion-postal, footer .info-footer .secretaria, footer .info-footer .redes-sociales {
+  width: 200px;
+}
+footer .info-footer h4 {
   text-transform: uppercase;
-  font-weight: bold;
+  padding-bottom: 10px;
 }
-footer .grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  grid-column-gap: 0px;
-  grid-row-gap: 0px;
+footer .info-footer a {
+  margin: 0 !important;
 }
-footer .grid .direccion-postal {
-  grid-area: 1/1/2/2;
-}
-footer .grid .secretaria {
-  grid-area: 2/1/3/2;
-}
-footer .grid .redes-sociales {
-  grid-area: 1/2/2/3;
+@media (max-width: 660px) {
+  footer .info-footer {
+    flex-direction: column !important;
+    align-items: center;
+  }
+  footer .direccion-postal, footer .secretaria, footer .redes-sociales {
+    padding: 10px;
+  }
 }
 
 /* Subtitulos y parrafos */
-h2, h3, h4 {
+h2, h3 {
   text-align: center;
   text-transform: uppercase;
   padding: 5px;
-}
-
-h4 {
-  text-align: left;
-  margin-left: 5px;
 }
 
 p {
